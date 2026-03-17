@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Styling Project - ApexPlanet</title>
+
+<style>
+
+/* Internal CSS */
+
+body{
+font-family: Arial;
+margin:0;
+padding:0;
+background:linear-gradient(to right, lightblue, lightgreen);
+}
+
+/* Navigation */
+
+nav{
+background:black;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+}
+
+/* Flexbox Layout */
+
+.flex-container{
+display:flex;
+justify-content:space-around;
+padding:20px;
+}
+
+.flex-box{
+background:orange;
+width:150px;
+height:150px;
+text-align:center;
+line-height:150px;
+border-radius:10px;
+box-shadow:5px 5px 10px gray;
+}
+
+/* Grid Layout */
+
+.grid-container{
+display:grid;
+grid-template-columns:auto auto auto;
+gap:15px;
+padding:20px;
+}
+
+.grid-item{
+background:lightblue;
+padding:30px;
+text-align:center;
+border:2px solid black;
+}
+
+/* Animation */
+
+.animate-box{
+width:100px;
+height:100px;
+background:red;
+margin:20px auto;
+animation:colorchange 4s infinite;
+}
+
+@keyframes colorchange{
+
+0%{background:red;}
+
+50%{background:yellow;}
+
+100%{background:green;}
+
+}
+
+/* Transition */
+
+button{
+padding:10px 20px;
+background:blue;
+color:white;
+border:none;
+cursor:pointer;
+transition:0.5s;
+}
+
+button:hover{
+background:red;
+transform:scale(1.2);
+}
+
+/* Media Query */
+
+@media(max-width:768px){
+
+.flex-container{
+flex-direction:column;
+align-items:center;
+}
+
+.grid-container{
+grid-template-columns:auto;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Inline CSS -->
+
+<h1 style="text-align:center;color:darkblue;">CSS3 Styling Internship Task</h1>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+
+</nav>
+
+<h2 style="text-align:center;">Flexbox Layout</h2>
+
+<div class="flex-container">
+
+<div class="flex-box">Box 1</div>
+<div class="flex-box">Box 2</div>
+<div class="flex-box">Box 3</div>
+
+</div>
+
+<h2 style="text-align:center;">Grid Layout</h2>
+
+<div class="grid-container">
+
+<div class="grid-item">1</div>
+<div class="grid-item">2</div>
+<div class="grid-item">3</div>
+<div class="grid-item">4</div>
+<div class="grid-item">5</div>
+<div class="grid-item">6</div>
+
+</div>
+
+<h2 style="text-align:center;">CSS Animation</h2>
+
+<div class="animate-box"></div>
+
+<div style="text-align:center">
+
+<h2>CSS Transition</h2>
+
+<button>Hover Me</button>
+
+</div>
+
+</body>
+</html>

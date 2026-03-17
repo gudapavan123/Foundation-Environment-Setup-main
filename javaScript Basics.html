@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Basics Task</title>
+
+<style>
+body{
+font-family: Arial;
+text-align:center;
+background:#f2f2f2;
+}
+
+.container{
+width:400px;
+margin:auto;
+padding:20px;
+background:white;
+box-shadow:0 0 10px gray;
+border-radius:10px;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px;
+}
+
+button{
+padding:10px 20px;
+background:blue;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+button:hover{
+background:green;
+}
+
+p{
+color:red;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>JavaScript Basics Internship Task</h1>
+
+<div class="container">
+
+<h2>Form Validation</h2>
+
+<form id="myForm">
+
+<input type="text" id="name" placeholder="Enter Name"><br>
+
+<input type="email" id="email" placeholder="Enter Email"><br>
+
+<input type="password" id="password" placeholder="Enter Password"><br>
+
+<button type="button" onclick="validateForm()">Submit</button>
+
+<p id="message"></p>
+
+</form>
+
+<h2>Event Handling Example</h2>
+
+<button id="clickBtn">Click Me</button>
+
+<p id="clickResult"></p>
+
+</div>
+
+<script>
+
+// Variables
+let numbers = [10,20,30,40,50]
+
+// Loop
+for(let i=0;i<numbers.length;i++){
+console.log("Array Value:",numbers[i])
+}
+
+// Function
+function showMessage(){
+alert("Function Executed Successfully!")
+}
+
+// DOM Manipulation using getElementById
+document.getElementById("clickBtn").addEventListener("click",function(){
+document.getElementById("clickResult").innerHTML="Button Clicked!"
+})
+
+// Event Handling - keyup
+document.getElementById("name").addEventListener("keyup",function(){
+console.log("Typing in Name Field")
+})
+
+// Event Handling - change
+document.getElementById("email").addEventListener("change",function(){
+console.log("Email Changed")
+})
+
+// Form Validation
+function validateForm(){
+
+let name=document.getElementById("name").value
+let email=document.getElementById("email").value
+let password=document.getElementById("password").value
+
+let message=document.querySelector("#message")
+
+// Required Field Check
+if(name=="" || email=="" || password==""){
+message.innerHTML="All fields are required"
+return
+}
+
+// Email Format Check
+let emailPattern=/^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+
+if(!email.match(emailPattern)){
+message.innerHTML="Enter valid email"
+return
+}
+
+// Password Length Check
+if(password.length<6){
+message.innerHTML="Password must be at least 6 characters"
+return
+}
+
+message.style.color="green"
+message.innerHTML="Form Submitted Successfully!"
+
+}
+
+</script>
+
+</body>
+</html>
