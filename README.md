@@ -147,9 +147,9 @@ Example Students Table:
 
   id   name       email
   ---- ---------- --------------------
-  1    Jyothi     jyothi@gmail.com
-  2    Varshini   varshini@gmail.com
-  3    Vamu       vamu@gmail.com
+  1    Pavan     pavan@gmail.com
+  2    Ameer     ameer@gmail.com
+  3    Purush    purush@gmail.com
 
 ------------------------------------------------------------------------
 
@@ -164,16 +164,16 @@ Example Browser Output:
 Student Records
 
 ID: 1\
-Name: Jyothi\
-Email: jyothi@gmail.com
+Name: Pavan\
+Email: pavan@gmail.com
 
 ID: 2\
-Name: Varshini\
-Email: varshini@gmail.com
+Name: Ameer\
+Email: ameer@gmail.com
 
 ID: 3\
-Name: Vamu\
-Email: vamu@gmail.com
+Name: Purush\
+Email: purush@gmail.com
 
 ------------------------------------------------------------------------
 
