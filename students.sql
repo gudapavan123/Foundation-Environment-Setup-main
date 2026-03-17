@@ -38,9 +38,9 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`id`, `name`, `email`) VALUES
-(3301, 'jyothika', 'jyothi@gmail.com'),
-(3302, 'varshini', 'varshi@gmail.com'),
-(3303, 'jagg', 'jagg@gmail.com');
+(3301, 'Pavan', 'pavan@gmail.com'),
+(3302, 'Ameer', 'ameeri@gmail.com'),
+(3303, 'Purush', 'purush@gmail.com');
 
 --
 -- Indexes for dumped tables
